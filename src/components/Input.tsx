@@ -1,5 +1,12 @@
 import styles from "./Input.module.css";
 
+/**
+ * Renders an input element with predefined styles and a placeholder text.
+ *
+ * @param {Object} props The properties object.
+ * @param {...Object} props.rest Rest of the properties to be passed to the input element.
+ * @return {JSX.Element} The input element with the specified properties.
+ */
 export function Input({
   ...rest
 }: React.DetailedHTMLProps<
