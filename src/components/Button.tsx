@@ -1,8 +1,10 @@
-import styles from './Button.module.css'
-import * as React from "react";
+import styles from "./Button.module.css";
+import React from "react";
 
-type Props = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-
+type Props = React.DetailedHTMLProps<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
 
 /**
  * Renders a button component with additional properties.
@@ -13,9 +15,9 @@ type Props = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElemen
  * @return {JSX.Element} A JSX element representing the button.
  */
 export function Button({ children, ...rest }: Props) {
-    return (
-        <button className={styles.container} {...rest}>
-            {children}
-        </button>
-    );
+  return (
+    <button className={styles.container} {...rest}>
+      {children}
+    </button>
+  );
 }
